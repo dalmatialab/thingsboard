@@ -4,6 +4,7 @@
 # Supported tags and respective Dockerfile links
 
  - 2.4.3-rc-1
+ - 2.4.3-rc-2
 
 # What is Thingsboard ? 
 
