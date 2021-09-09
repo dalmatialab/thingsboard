@@ -1,6 +1,11 @@
 FROM thingsboard/openjdk8
 LABEL maintainer="dalmatialab"
 
+# Install tzdata and set right timezone
+ENV DEBIAN_FRONTEND="noninteractive"
+RUN apt update && apt-get -y install tzdata
+ENV TZ=Europe/Zagreb
+
 RUN apt-get update && apt-get install -y nmap wget
 
 COPY conf/logback.xml conf/thingsboard.conf src/start-db.sh src/stop-db.sh start-tb.sh src/upgrade-tb.sh src/install-tb.sh /tmp/

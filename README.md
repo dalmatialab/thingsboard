@@ -47,6 +47,10 @@ This is *optional* variable. It specifies PostgreSQL username (default is `postg
 
 This is *required* variable. It specifies password for PostgreSQL use.
 
+**TZ**
+
+This is *optional* variable. It specifes timezone. Default value is `Europe/Zagreb`.
+
 ## Ports
 
 Thingsboard exposes user interface at port 9090.  
